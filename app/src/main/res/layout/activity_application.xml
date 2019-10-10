@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".application">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/image_capture"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/detected_text"
+        android:layout_below="@id/image_capture"
+        android:layout_margin="16dp"
+        android:maxLines="6"
+        />
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_capture"
+        android:text="@string/capture"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:layout_above="@+id/text_detect"
+
+        />
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_detect"
+        android:text="@string/detect"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        />
+
+
+</RelativeLayout>
